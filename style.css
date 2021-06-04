@@ -1,0 +1,108 @@
+body {
+  background-color: rgba(3, 111, 235, 0.835);
+}
+
+.site-container {
+  min-height: 100vh;
+  border-radius: 10px;
+  margin: 25px 50px;
+  background-color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px;
+}
+
+.brand-name {
+  font-size: 48px;
+  text-decoration: none;
+}
+
+.brand-name-small {
+  font-size: 38px;
+  text-decoration: none;
+  color: black;
+  display: none;
+}
+
+.brand-name:visited {
+  color: #000;
+}
+
+.nav-links {
+  font-size: 25px;
+}
+
+.home-img {
+  width: 100%;
+}
+
+main {
+  display: table-cell;
+  padding: 40px;
+}
+
+.blog-posts {
+  float: left;
+  margin-top: 80px;
+  width: 70%;
+}
+
+aside {
+  float: right;
+  width: 20%;
+  margin-top: 80px;
+  background-color: rgba(255, 196, 0, 0.794);
+  padding: 5px;
+}
+
+aside h2 {
+  background-color: orangered;
+  padding: 5px;
+  margin: 10px;
+  color: white;
+}
+
+article a {
+  font-size: 40px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .blog-posts {
+    float: none;
+    width: 100%;
+  }
+  aside {
+    float: none;
+    width: 100%;
+  }
+  .nav-links {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .brand-name {
+    font-size: 38px;
+  }
+  article a {
+    font-size: 28px;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .brand-name {
+    display: none;
+  }
+  .brand-name-small {
+    display: block;
+  }
+}
